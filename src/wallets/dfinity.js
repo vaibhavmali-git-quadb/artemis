@@ -3,16 +3,16 @@ import { getAccountIdentifier } from '../libs/identifier-utils';
 import { AuthClient } from "@dfinity/auth-client";
 
 export const dfinity = {
-    readyState: "Loadable", url: "https://identity.ic0.app",
+    readyState: "Loadable", url: "http://rdmx6-jaaaa-aaaaa-aaadq-cai.localhost:4943",
     authClient:false,
-    connectWallet: async function (connectObj = { whitelist: [], host: '' }) {
+    connectWallet: async function (connectObj = { whitelist: [], host: 'http://rdmx6-jaaaa-aaaaa-aaadq-cai.localhost:4943' }) {
         var self = this, returnData = {};
         self.authClient = await AuthClient.create();
         return new Promise(async (resolve, reject) => {
             var isConnected = await  self.authClient.isAuthenticated();
             if (!isConnected) {
                 self.authClient.login({
-                    identityProvider: 'https://identity.ic0.app',
+                    identityProvider: 'http://rdmx6-jaaaa-aaaaa-aaadq-cai.localhost:4943',
                     onSuccess: async () => {
                         returnData = await continueLogin();
                         resolve(returnData);
