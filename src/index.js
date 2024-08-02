@@ -6,7 +6,7 @@ import { BatchTransaction } from './libs/batchTransact'
 import { getAccountIdentifier } from './libs/identifier-utils';
 import { Principal } from '@dfinity/principal';
 
-const HOSTURL = "https://icp0.io";
+const HOSTURL="http://127.0.0.1:4943"
 const ICP_DECIMAL = 10 ** 8;
 const NNS_CANISTER_ID = 'ryjl3-tyaaa-aaaaa-aaaba-cai';
 const localStorageKey = 'dfinityWallet';
