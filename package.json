@@ -1,5 +1,5 @@
 {
-  "name": "artemis-web3-adapter",
+  "name": "quadb-artemis-web3-adapter",
   "version": "1.1.6",
   "description": "dfinity wallet adapter for connecting different wallets in IC",
   "main": "index.js",
@@ -29,5 +29,18 @@
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavmali-git-quadb/artemis.git"
+  },
+  "keywords": [
+    "icp",
+    "wallet"
+  ],
+  "types": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/vaibhavmali-git-quadb/artemis/issues"
+  },
+  "homepage": "https://github.com/vaibhavmali-git-quadb/artemis#readme"
 }
